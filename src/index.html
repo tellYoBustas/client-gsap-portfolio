@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer</title>
+    <meta name="title" content="Developer" />
+    <link rel="icon" href="public/favicon.ico" />
+    <meta
+      name="description"
+      content="A FrontEnd Developer who appreciates good design."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dsmqkqij0/image/upload/v1665660767/OpenGraph_y9hxvb.png"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://spacetogrow.dev" />
+    <meta property="twitter:title" content="Developer" />
+    <meta
+      property="twitter:description"
+      content="A FrontEnd Developer who appreciates good design."
+    />
+    <meta
+      property="twitter:image"
+      content="https://res.cloudinary.com/dsmqkqij0/image/upload/v1665660767/OpenGraph_y9hxvb.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://spacetogrow.dev" />
+    <meta property="og:title" content="Developer" />
+    <meta
+      property="og:description"
+      content="A FrontEnd Developer who appreciates good design."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dsmqkqij0/image/upload/v1665660767/OpenGraph_y9hxvb.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Work+Sans:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/index.scss" />
+  </head>
+  <body>
+    <div id="loading"><span>000</span></div>
+    <script>
+      function rand() {
+        v = Math.floor(Math.random() * (99 - 1 + 1) + 1);
+        return v < 10 ? `00${v}` : `0${v}`;
+      }
+      const l = document.getElementById('loading').querySelector('span');
+      let load = setInterval(() => {
+        l.innerHTML = rand();
+      }, 200);
+
+      window.onload = function () {
+        clearInterval(load);
+        l.innerHTML = '100';
+      };
+    </script>
+    <div data-scroll-container>
+      <header>
+        <nav>
+          <p id="time">kzn</p>
+          <div>
+            <a href="https://t.me/s044s" target="_blank" data-text="telegram"
+              >telegram</a
+            >
+            <a
+              href="https://www.linkedin.com/in/emil-nuriev-798b00237/"
+              target="_blank"
+              data-text="linkedin"
+              >linkedin</a
+            >
+            <a
+              href="https://www.youtube.com/channel/UCfU30eK1KNNNkoQ1XI74v2g"
+              target="_blank"
+              data-text="youtube"
+              >youtube</a
+            >
+            <a
+              href="https://github.com/tellYoBustas"
+              target="_blank"
+              data-text="github"
+              >github</a
+            >
+            <a
+              href="mailto:44.tell.y0@gmail.com"
+              target="_blank"
+              data-text="gmail"
+              >gmail</a
+            >
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="promo">
+          <div class="promo-block1">
+            <h1>front-end<br />developer</h1>
+            <p>
+              dev<span>(</span>code<span>)</span
+              ><span>{</span
+              >front<span>==></span>end<span>++</span>code<span>&&</span>exp<span
+                >}</span
+              >
+            </p>
+          </div>
+          <div class="promo-block2">
+            <div class="face">
+              <div class="eye"><div></div></div>
+              <div class="eye"><div></div></div>
+            </div>
+            <div class="cloud parallax">
+              <div data-depth="0.1"></div>
+              <div data-depth="0.1"></div>
+              <div data-depth="0.3"></div>
+              <div data-depth="0.2"></div>
+              <div data-depth="0.3"></div>
+              <div data-depth="0.2"></div>
+              <div data-depth="0.1"></div>
+              <div data-depth="0.2"></div>
+              <div data-depth="0.3"></div>
+              <div data-depth="0.2"></div>
+              <div data-depth="0.3"></div>
+
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="contacts">
+              <a
+                href="https://github.com/tellYoBustas"
+                target="_blank"
+                data-text="github"
+                >github</a
+              >
+              <a href="https://t.me/s044s" target="_blank" data-text="telegram"
+                >telegram</a
+              >
+              <a
+                href="https://www.linkedin.com/in/emil-nuriev-798b00237/"
+                target="_blank"
+                data-text="linkedin"
+                >linkedin</a
+              >
+              <a
+                href="https://www.youtube.com/channel/UCfU30eK1KNNNkoQ1XI74v2g"
+                target="_blank"
+                data-text="youtube"
+                >youtube</a
+              >
+              <a
+                href="mailto:44.tell.y0@gmail.com"
+                target="_blank"
+                data-text="gmail"
+                >gmail</a
+              >
+            </div>
+          </div>
+          <div class="promo-block3">
+            <svg
+              width="128"
+              height="128"
+              viewBox="0 0 128 128"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_186_76)">
+                <path/>
+              </g>
+              <defs>
+                <clipPath id="clip0_186_76">
+                  <rect width="128" height="128" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h2>one and<br />half years<br />of experience</h2>
+          </div>
+          <div class="promo-block4">
+            <svg
+              width="128"
+              height="128"
+              viewBox="0 0 128 128"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_184_73)">
+                <path/>
+              </g>
+              <defs>
+                <clipPath id="clip0_184_73">
+                  <rect width="128" height="128" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h2>back-end<br />engineer</h2>
+          </div>
+          <div class="promo-block5">
+            <img src="./assets/earbuds.png" alt="earbuds 3d" id="earbuds" />
+            <h2>Sound<br />engineer</h2>
+          </div>
+        </section>
+      </main>
+      <div id="paddingBlock"></div>
+    </div>
+    <div id="cursor"></div>
+    <div id="follower"></div>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

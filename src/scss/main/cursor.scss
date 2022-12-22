@@ -1,0 +1,40 @@
+#cursor,
+#follower {
+  position: fixed;
+  border-radius: 100%;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform,
+    0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 1s linear border;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  mix-blend-mode: difference;
+
+  @media (pointer:coarse) {
+    display: none;
+  }
+}
+#cursor {
+  width: adaptive(16);
+  height: adaptive(16);
+  background-color: $mainLight;
+  transform: scale(1);
+  &.active {
+    transform: scale(2.6);
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform;
+  }
+}
+#follower {
+  width: adaptive(64);
+  height: adaptive(64);
+  border: adaptive(1) solid $mainLight;
+  &.active {
+    transform: scale(0.7);
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform;
+  }
+}
+#follower.hidden,
+#cursor.hidden {
+  transform: scale(0.001) !important;
+  transition: 0.3s ease-in-out transform;
+}
+

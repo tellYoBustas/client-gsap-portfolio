@@ -1,0 +1,46 @@
+@media screen and (orientation: landscape) {
+  header {
+    margin-top: adaptive(20);
+    margin-bottom: adaptive(20);
+    padding: 0 adaptive(20);
+    & > nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & > p {
+        transform: translateY(-2500%);
+        transition: 1s transform ease-out;
+        color: $mainLight;
+        font-weight: 300;
+        font-size: adaptive(42);
+        line-height: 100%;
+      }
+      & > div {
+        display: flex;
+        align-items: center;
+        & > a {
+          transform: translateY(-5000%);
+        }
+        & > a:not(:last-child) {
+          margin-right: adaptive(20);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (orientation: portrait) {
+  header {
+    margin-top: adaptive(20);
+    margin-bottom: adaptive(20);
+    padding: 0 adaptive(20);
+    & > nav {
+      & > p {
+        display: none;
+      }
+      & > div {
+        display: none;
+      }
+    }
+  }
+}

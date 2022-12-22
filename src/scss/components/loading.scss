@@ -1,0 +1,29 @@
+#loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: $mainLight;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  transition: 1s top ease-in-out;
+  & > span {
+    transition: 1s bottom ease-in-out;
+    position: fixed;
+    color: $mainDark;
+    font-weight: 300;
+    font-size: adaptive(64);
+    bottom: adaptive(64);
+    left: adaptive(64);
+    @media screen and (orientation: portrait) {
+      font-size: adaptive(128);
+      bottom: adaptive(128);
+      left: adaptive(128);
+      @media screen and (max-width: 475px) {
+        font-size: adaptive(256);
+        bottom: adaptive(256);
+        left: adaptive(256);
+      }
+    }
+  }
+}

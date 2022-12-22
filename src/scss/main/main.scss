@@ -1,0 +1,22 @@
+* {
+  cursor: none;
+}
+
+html,
+body {
+  background-color: $mainDark;
+  font-family: $fontMain;
+  color: $mainDark;
+  overflow-x: hidden;
+}
+
+#paddingBlock {
+  width: 100%;
+  @media screen and (orientation: landscape) {
+    height: 3vw;
+  }
+  @media screen and (orientation: portrait) {
+    height: 1vw;
+  }
+  margin-top: adaptive(20);
+}

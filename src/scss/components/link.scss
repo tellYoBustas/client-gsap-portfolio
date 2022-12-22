@@ -1,0 +1,66 @@
+@media screen and (orientation: landscape) {
+  a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: max-content;
+    height: fit-content;
+    padding: adaptive(11) adaptive(15);
+    border-radius: adaptive(32);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: adaptive(18);
+    line-height: 1;
+    color: transparent;
+    border: adaptive(1) solid $mainLight;
+    background-color: transparent;
+    mix-blend-mode: difference;
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      transition: 1s transform cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      color: $mainLight;
+    }
+    &::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, 150%);
+      left: 50%;
+      transition: 1s transform cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      color: $mainLight;
+    }
+    &:hover {
+      background-color: $mainLight;
+      &::before {
+        transform: translate(-50%, -250%);
+        transition: 1s transform cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        color: $mainDark;
+      }
+      &::after {
+        transform: translate(-50%, -50%);
+        transition: 1s transform cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        color: $mainDark;
+      }
+    }
+  }
+}
+@media screen and (orientation: portrait) {
+  a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: max-content;
+    height: fit-content;
+    padding: adaptive(12) adaptive(16);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    color: $mainDark;
+    border: none;
+    background-color: transparent;
+  }
+}

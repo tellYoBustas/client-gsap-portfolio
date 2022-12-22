@@ -1,0 +1,10 @@
+$maxWidth: 1440;
+@function adaptive($value) {
+  $adaptive: calc(100vw / $maxWidth * $value);
+  @return $adaptive;
+}
+
+
+@mixin rect($top, $bottom) {
+  clip: rect($top, 9999px, $bottom, 0);
+}
